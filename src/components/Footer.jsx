@@ -18,6 +18,7 @@ export default function Footer() {
 
         <div className="app-footer__meta">
           <span>Privacy-first processing flow</span>
+          <span>backless-ai.vercel.app</span>
           <span>{currentYear} BacklessAI</span>
         </div>
       </div>
