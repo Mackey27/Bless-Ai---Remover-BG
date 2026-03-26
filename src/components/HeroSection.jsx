@@ -1,7 +1,5 @@
 export default function HeroSection({
   onBrowseClick,
-  onBrowseFolderClick,
-  onPasteClick,
   onFilesSelected,
   uploadZoneRef,
   isDragOver,
@@ -43,7 +41,7 @@ export default function HeroSection({
           </div>
 
           <h3>Drop your images here</h3>
-          <p>or paste from clipboard, click to browse</p>
+          <p>or click to browse</p>
 
           <div className="hero-actions">
             <button type="button" className="btn-primary" onClick={onBrowseClick}>
@@ -52,23 +50,8 @@ export default function HeroSection({
               </svg>
               Browse Files
             </button>
-            <button type="button" className="btn-secondary" onClick={onBrowseFolderClick}>
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-                <path d="M3 7a2 2 0 0 1 2-2h5l2 2h7a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V7z" />
-                <path d="M12 11v6M9 14h6" />
-              </svg>
-              Add Folder
-            </button>
-            <button type="button" className="btn-secondary" onClick={onPasteClick}>
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-                <path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2" />
-                <rect x="8" y="2" width="8" height="4" rx="1" ry="1" />
-              </svg>
-              Paste
-            </button>
           </div>
-
-          <small>Supports PNG, JPG, WebP, HEIC, and HEIF up to 10MB, including folders and 250+ image selections</small>
+          <small>Supports PNG, JPG, WebP, HEIC, and HEIF up to 10MB with 250+ image selections</small>
         </div>
       </div>
 

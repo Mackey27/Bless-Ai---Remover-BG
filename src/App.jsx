@@ -1,5 +1,6 @@
 import { useEffect, useMemo, useRef, useState } from "react";
 import EditorSection from "./components/EditorSection.jsx";
+import Footer from "./components/Footer.jsx";
 import Header from "./components/Header.jsx";
 import HeroSection from "./components/HeroSection.jsx";
 import HistoryPanel from "./components/HistoryPanel.jsx";
@@ -1148,6 +1149,7 @@ export default function App() {
       </button>
 
       <Toast toast={toast} />
+      <Footer />
     </div>
   );
 }
